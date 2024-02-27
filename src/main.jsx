@@ -30,18 +30,16 @@ const theme = {
   spacing: value => `${value * 4}px`,
 };
 
-ReactDOM.createRoot(document.getElementById('root')).render(
+ReactDOM.createRoot(document.getElementById("root")).render(
   <React.StrictMode>
     <PersistGate loading={null} persistor={persistor}>
-      <BrowserRouter basename="/carrental">
-      <ThemeProvider theme={theme}>
-        <Provider store={store}>
-          <App />
-        </Provider>
-      </ThemeProvider>
+      <BrowserRouter basename="/router-options">
+        <ThemeProvider theme={theme}>
+          <Provider store={store}>
+            <App />
+          </Provider>
+        </ThemeProvider>
       </BrowserRouter>
-    {/* <BrowserRouter basename="/car-rental">
-    </BrowserRouter> */}
-  </PersistGate>
-  </React.StrictMode>,
-)
+    </PersistGate>
+  </React.StrictMode>
+);

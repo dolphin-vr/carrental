@@ -1,7 +1,8 @@
 {
-  "name": "carrental",
+  "name": "router-options",
   "private": true,
   "version": "0.1.1",
+  "homepage": "https://dolphin-vr.github.io/router-options/",
   "author": "dolphin-vr",
   "license": "ISC",
   "type": "module",
