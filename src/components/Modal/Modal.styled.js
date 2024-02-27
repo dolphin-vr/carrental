@@ -1,4 +1,16 @@
 import styled from "styled-components";
+import { IconSvg } from "../IconSvg/IconSvg";
+
+export const StyledSvg = styled.svg`
+  width: 24px;
+  height: 24px;
+`;
+
+export const StyledIcon = styled(IconSvg)`
+  width: 24px;
+  height: 24px;
+  stroke: "#121417"
+`;
 
 export const BackDrop = styled.div`
    position: fixed;
@@ -38,10 +50,6 @@ export const CloseBtn = styled.button`
    }
 `;
 
-export const StyledSvg = styled.svg`
-   width: 24px;
-   height: 24px;
-`;
 export const Pic = styled.img`
    width: 460px;
    height: 248px;

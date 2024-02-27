@@ -1,7 +1,7 @@
 import { createPortal } from 'react-dom';
-import { Additions, BackDrop, BtnRent, CloseBtn, Conditions, Content, Descript, FeatureTitle, FeatureWrap, InfoSpan, InfoString, InfoWrap, Pic, Span, StyledSvg, Text, Values } from './Modal.styled';
+import { Additions, BackDrop, BtnRent, CloseBtn, Conditions, Content, Descript, FeatureTitle, FeatureWrap, InfoSpan, InfoString, InfoWrap, Pic, Span, StyledIcon, Text, Values } from './Modal.styled';
 import { useEffect } from 'react';
-import { Icon } from '../Icon/Icon';
+// import { Icon } from '../Icon/Icon';
 import { city, country, minAge, trailDollar } from '../../api/utils';
 
 const modalRoot = document.querySelector('#modal-root');
@@ -29,7 +29,8 @@ export const Modal = ({ car, onClose }) => {
    return createPortal(
       <BackDrop onClick={handleBackdropClick}>
          <Content>
-            <CloseBtn type="button" onClick={onClose}><StyledSvg><Icon tag={"close"} /></StyledSvg></CloseBtn>
+            {/* <CloseBtn type="button" onClick={onClose}><StyledSvg><Icon tag={"close"} /></StyledSvg></CloseBtn> */}
+            <CloseBtn type="button" onClick={onClose}><StyledIcon tag={"close"} /></CloseBtn>
             <Pic src={car.img || car.photoLink} />
             <Text >{car.make}<Span>{car.model}</Span>, {car.year}</Text>
             <InfoWrap>
